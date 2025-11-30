@@ -6,28 +6,28 @@
 
 ## Структура проєкту
 ```bash
-├── example.html
-├── index.css
-├── vite.config.ts
-├── tsconfig.json
+├── example.html                    — HTML-файл лендингу example
+├── index.css                       — Tailwind та глобальні стилі
+├── vite.config.ts                  — Vite-конфіг з мультисторінковою збіркою
+├── tsconfig.json                   — конфігурації TypeScript
 └── src
     ├── landings
-    │   └── example
-    │       ├── components
+    │   └── example                 — окремий лендинг
+    │       ├── components          — компоненти, що використовуються тільки тут
     │       │   ├── Advantages.tsx
     │       │   ├── Banner.tsx
     │       │   ├── Footer.tsx
     │       │   ├── Header.tsx
     │       │   └── Reviews.tsx
-    │       ├── hooks
+    │       ├── hooks               — локальні хуки для цього лендингу
     │       │   ├── useFbq.ts
     │       │   └── useReveal.ts
-    │       ├── App.tsx
-    │       └── main.tsx
+    │       ├── App.tsx             — основний компонент сторінки
+    │       └── main.tsx            — точка входу (підключається до example.html)
     ├── lib
-    │   └── fbq.ts
+    │   └── fbq.ts                  — реалізація роботи з Facebook Pixel
     └── types
-        └── global.d.ts
+        └── global.d.ts             — глобальні типи (наприклад, для fbq)
 
 ```
 
