@@ -5,37 +5,31 @@
 Кожен лендинг збирається як окремий HTML-файл через Vite.
 
 ## Структура проєкту
+```bash
+├── example.html
+├── index.css
+├── vite.config.ts
+├── tsconfig.json
+└── src
+    ├── landings
+    │   └── example
+    │       ├── components
+    │       │   ├── Advantages.tsx
+    │       │   ├── Banner.tsx
+    │       │   ├── Footer.tsx
+    │       │   ├── Header.tsx
+    │       │   └── Reviews.tsx
+    │       ├── hooks
+    │       │   ├── useFbq.ts
+    │       │   └── useReveal.ts
+    │       ├── App.tsx
+    │       └── main.tsx
+    ├── lib
+    │   └── fbq.ts
+    └── types
+        └── global.d.ts
 
-src/
-landings/
-example/ # Окремий лендинг
-components/ # Усі компоненти сторінки
-Advantages.tsx
-Banner.tsx
-Footer.tsx
-Header.tsx
-Reviews.tsx
-hooks/ # Локальні хуки для лендингу
-useFbq.ts
-useReveal.ts
-App.tsx # Головний компонент сторінки
-main.tsx # Точка входу (підключається до example.html)
-
-lib/
-fbq.ts # Функціонал умовного Facebook Pixel
-
-types/
-global.d.ts # Глобальні типи (наприклад, fbq)
-
-index.css # Tailwind та глобальні стилі
-
-example.html # HTML-файл лендингу example
-vite.config.ts # Налаштування Vite для мультисторінкової збірки
-tsconfig.json # Основні конфіги TypeScript
-tsconfig.app.json
-tsconfig.node.json
-
----
+```
 
 ## Features
 
