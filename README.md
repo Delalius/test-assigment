@@ -80,7 +80,7 @@
 
 Vite, React, TypeScript, TailwindCSS
 
-## Запус проекту
+## Запуск проекту
 ```bash
 npm i
 npm run dev
