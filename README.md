@@ -80,5 +80,12 @@
 
 Vite, React, TypeScript, TailwindCSS
 
+## Запус проекту
+```bash
+npm i
+npm run dev
+```
+http://localhost:5173/example.html — Сторінка лендингу example
+
 
 
